@@ -35,9 +35,9 @@ mkdir -p configs/c.1/strings/0x409
 
 SERIAL=$(cat /sys/firmware/devicetree/base/serial-number)
 echo "$SERIAL"                > strings/0x409/serialnumber
-echo "Show-me Webcam Project" > strings/0x409/manufacturer
-echo "Piwebcam"               > strings/0x409/product
-echo "Piwebcam"               > configs/c.1/strings/0x409/configuration
+echo "PiSight Show-me Webcam Project" > strings/0x409/manufacturer
+echo "PiSight"               > strings/0x409/product
+echo "PiSight"               > configs/c.1/strings/0x409/configuration
 echo 500                      > configs/c.1/MaxPower
 
 config_usb_serial () {
